@@ -1,0 +1,46 @@
+@import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+p,
+li,
+button {
+  color: white;
+  /* font-family: "Helvetica Neue", sans-serif; */
+  font-family: "Helvetica 25 UltraLight", sans-serif;
+  font-weight: 400;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 0.4rem;
+  }
+}

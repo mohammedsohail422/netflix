@@ -1,0 +1,263 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.gradient-color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0px,
+      transparent 60%,
+      rgba(0, 0, 0, 0.8)
+    )
+    rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 100%;
+}
+.herocontent {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2em;
+  flex-direction: column;
+  margin-top: 6em;
+}
+.herocontent h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+}
+.herocontent h1 span {
+  display: block;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input {
+  padding: 1.4em 1.4em;
+  width: 32em;
+
+  outline: none;
+  border: none;
+}
+.started {
+  background-color: #e50914;
+  padding: 0.52em 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+@media (max-width: 1000px) {
+  form input {
+    padding: 1em 1em;
+  }
+  .started {
+    padding: 0.7em 1em;
+  }
+}
+@media (max-width: 700px) {
+  .started {
+    padding: 1.19em 1em;
+  }
+  form input {
+    width: 20em;
+  }
+}
+@media (max-width: 400px) {
+  form input {
+    padding: 0.7em 1em;
+  }
+  form input {
+    width: 13em;
+  }
+}
+/* ************* TV ONE ********************* */
+.tv-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5em;
+}
+.left {
+  width: 50%;
+  /* border: 1px solid white; */
+}
+.left h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.left h3 {
+  font-size: 1.4rem;
+}
+.right {
+  width: 50%;
+  /* border: 1px solid white; */
+  position: relative;
+}
+
+.tv-img img {
+  width: 100%;
+}
+.video {
+  position: absolute;
+  left: 14%;
+  top: 21%;
+  z-index: -1;
+  width: 71%;
+}
+.video video {
+  width: 100%;
+}
+.active {
+  left: 19%;
+  top: 11%;
+}
+.active video {
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .tv-one {
+    flex-direction: column;
+    padding: 2em 0;
+  }
+  .left h2 {
+    text-align: center;
+  }
+  .left h3 {
+    text-align: center;
+  }
+}
+/* progress*************** */
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 5em;
+}
+.download-left {
+  position: relative;
+}
+.mobile {
+  width: 100%;
+}
+.mobile img {
+  width: 90%;
+}
+.progress-container {
+  display: flex;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  height: 7em;
+  position: absolute;
+  left: 11%;
+  top: 67%;
+  padding: 1em;
+  gap: 1em;
+  background-color: black;
+  align-items: center;
+}
+.stranger {
+  width: 4em;
+}
+.stranger img {
+  width: 100%;
+  padding: 0.3em;
+}
+.progress-container h4 {
+  font-weight: 600;
+}
+.progress-container p {
+  color: #0071eb;
+}
+.progress img {
+  width: 4em;
+}
+.download-right {
+  width: 70%;
+}
+.download-right h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.download-right h3 {
+  font-size: 1.4rem;
+}
+@media (max-width: 1000px) {
+  .progress-container {
+    left: 22%;
+  }
+}
+@media (max-width: 500px) {
+  .download {
+    flex-direction: column;
+  }
+  .download-right h2 {
+    text-align: center;
+  }
+  .download-right h3 {
+    text-align: center;
+  }
+}
+@media (max-width: 1000px) {
+  .progress-container {
+    left: 22%;
+  }
+  .progress-container {
+    padding: 2em;
+    gap: 2em;
+  }
+}
+/* children************ */
+.children-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 5em;
+}
+
+.children-profile h2 {
+  font-size: 2em;
+}
+.head h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.head h3 {
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .children-profile {
+    flex-direction: column;
+  }
+  .head h2 {
+    text-align: center;
+  }
+  .head h3 {
+    text-align: center;
+  }
+}
+/* faq******************* */
+.faq {
+  padding: 5em;
+}
+.main-heading {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.faq-tail {
+  text-align: center;
+  padding: 2em 0;
+}
